@@ -26,7 +26,7 @@ function Map({setState}) {
       })
       .catch((error) => console.error("Error fetching GeoJSON:", error));
 
-    fetch("/india-districts.json")
+    fetch("/india-districts-727.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
