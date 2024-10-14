@@ -119,11 +119,10 @@ function Map({setState}) {
                 const { DISTRICT } = geo.properties;
                 return (
                   <Geography
-                    className="District"
+                    
                     key={geo.rsmKey}
                     geography={geo}
-                    onMouseEnter={() => setTooltipContent(DISTRICT)}
-                    onMouseLeave={() => setTooltipContent("")}
+                    
                     style={{
                       default: {
                         fill: "none",
@@ -143,7 +142,7 @@ function Map({setState}) {
                       },
                       active: {
                         outline: "none",
-                        outline:"none",
+                        
                       },
                     }}
                   />
