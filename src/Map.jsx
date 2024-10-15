@@ -96,10 +96,11 @@ function Map({setState}) {
                       strokeWidth: "0.5px",
                     },
                     hover: {
-                      fill: isZoomedState(ST_NM) ? "#475569" : "black",
+                      fill: isZoomedState(ST_NM) ? "#475569" : !zoomed?"black":"#D6D6DA",
                       outline: "none",
                     },
                     pressed: {
+                      fill:"#D6D6DA",
                       outline: "none",
                     },
                     active: {
