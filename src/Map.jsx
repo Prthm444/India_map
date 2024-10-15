@@ -130,6 +130,7 @@ function Map({setState}) {
                         stroke: "#D6D6DA",
                         strokeWidth: "1px",
                         opacity: 0.5,
+                        outline: "none",
                       },
                       hover: {
                         fill: "none",
@@ -143,7 +144,6 @@ function Map({setState}) {
                       },
                       active: {
                         outline: "none",
-                        
                       },
                     }}
                   />
