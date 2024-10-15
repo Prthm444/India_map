@@ -46,7 +46,7 @@ function Map({setState}) {
   const handleStateClick = (geo) => {
     const { ST_NM } = geo.properties;
 
-    if (zoomed) {
+    if (zoomed && ST_NM==zoomedState) {
       setMapCenter(CentreOfIndia);
       setZoomed(false);
       setZoomLevel(0.5);
@@ -115,7 +115,7 @@ function Map({setState}) {
         {zoomed && (
           <Geographies geography={districtGeoJSON}>
             {({ geographies }) =>
-              geographies.map((geo) => {
+              (geographies.map((geo) => {
                 const { DISTRICT } = geo.properties;
                 return (
                   <Geography
@@ -147,7 +147,7 @@ function Map({setState}) {
                     }}
                   />
                 );
-              })
+              }))
             }
           </Geographies>
         )}
